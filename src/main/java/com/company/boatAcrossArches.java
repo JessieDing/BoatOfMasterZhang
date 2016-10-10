@@ -17,6 +17,11 @@ public class boatAcrossArches {
         System.out.println("第三条水路桥洞高度：");
         String road3 = scan3.nextLine();
         int c = Integer.parseInt(road3);
-
+        if (a<50&&b<50&&c<50){
+            System.out.println("IMPASSABLE");
+        }
+        if (a>=50||b>=50||c>=50){
+            System.out.println("PASS");
+        }
     }
 }

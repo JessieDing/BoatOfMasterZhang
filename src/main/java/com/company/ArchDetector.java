@@ -7,8 +7,8 @@ import java.util.List;
  */
 public class ArchDetector {
     public String detect(List<Arch> arches){
-        boolean isImpossable = arches.stream().allMatch(arch -> arch.getHeight() < 50);
-        if (isImpossable) {
+        boolean isImpassable = arches.stream().allMatch(arch -> arch.getHeight() < 50);
+        if (isImpassable) {
             return "IMPASSABLE";
         }
         for (Arch arch : arches) {
